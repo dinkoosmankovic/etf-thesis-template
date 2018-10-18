@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="744.09448819" height="1052.3622047" id="svg2" sodipodi:version="0.32" inkscape:version="0.45.1" sodipodi:docbase="/home/vedran/Documents/etf" sodipodi:docname="etf-logo.svg" inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs id="defs4"/>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" gridtolerance="10000" guidetolerance="10" objecttolerance="10" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.49497475" inkscape:cx="-38.355248" inkscape:cy="675.28804" inkscape:document-units="px" inkscape:current-layer="layer1" inkscape:window-width="1024" inkscape:window-height="713" inkscape:window-x="0" inkscape:window-y="0" showguides="true" inkscape:guide-bbox="true">
+    <sodipodi:guide orientation="horizontal" position="714.64286" id="guide2241"/>
+  </sodipodi:namedview>
+  <metadata id="metadata7">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1">
+    <path style="fill:#0266ae;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 568.49539,159.21327 C 505.65382,159.09972 463.71862,227.58827 460.05789,234.46327 C 456.2482,241.61806 383.96413,380.90077 383.96414,380.90077 L 206.83914,378.74452 C 61.720981,379.35226 10.924312,470.05112 10.776642,532.68202 C 11.057932,644.13827 122.6823,636.87394 137.90164,636.96327 C 152.76384,637.05262 391.62039,636.96329 391.62039,636.96327 L 274.68289,861.24452 L 272.55789,863.74452 C 363.27218,878.74452 413.27665,774.46329 413.27664,774.46327 L 412.55789,774.46327 L 498.96414,610.18202 L 586.46414,609.80702 L 586.46414,601.24452 L 503.62039,600.90077 C 503.62039,600.90077 568.3733,476.84553 573.27664,467.30702 C 594.24521,426.51692 612.55787,426.24451 612.55789,426.24452 L 685.05789,426.24452 L 694.68289,415.52577 C 694.68289,415.52577 526.82131,415.90077 518.96414,415.90077 C 511.107,415.90077 501.83914,428.02577 501.83914,428.02577 L 410.05789,601.24452 C 410.05789,601.24452 404.33467,601.58826 388.62039,601.58827 C 372.9061,601.58827 380.77664,581.24452 380.77664,581.24452 L 477.55789,396.58827 L 704.68289,398.02577 L 718.27664,380.18202 L 486.83914,380.18202 L 600.77664,160.18202 C 600.77664,160.18202 601.59894,159.27342 568.49539,159.21327 z M 326.40164,395.65077 C 348.60031,395.57543 376.12039,395.90077 376.12039,395.90077 L 318.96414,505.90077 C 318.96413,505.90077 319.17965,505.80069 303.74539,506.55702 C 285.06638,507.47235 248.65563,488.90377 248.96414,452.30702 C 249.22675,421.45822 287.54004,396.43648 307.18289,395.90077 C 312.18289,395.76684 319.00208,395.67588 326.40164,395.65077 z M 311.12039,519.80702 C 311.12039,519.80702 292.47974,548.29265 292.90164,570.90077 C 293.66002,611.53959 317.90164,610.18203 317.90164,610.18202 L 405.77664,610.18202 L 398.96414,622.68202 L 226.46414,622.30702 C 226.46414,622.30702 176.90852,614.8037 177.55789,576.58827 C 178.29379,533.28039 232.18289,520.18203 232.18289,520.18202 L 311.12039,519.80702 z " id="path2221"/>
+  </g>
+</svg>

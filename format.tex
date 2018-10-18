@@ -1,0 +1,198 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     This is format.tex file needed for the dmathesis.cls file.  You    %
+%  have to  put this file in the same directory with your thesis files.  %
+%                Written by M. Imran 2001/06/18                          % 
+%                 No Copyright for this file                             % 
+%                 Save your time and enjoy it                            % 
+%                                                                        % 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%  Put packages you want to use here and 'fancyhdr' is required   %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}
+\usepackage{epsfig}
+\usepackage{cite}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{theorem}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{epic}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[font=footnotesize,labelfont=bf]{subcaption}
+%\usepackage{subcaption}
+\usepackage{pstricks}
+\usepackage{pst-plot}
+\usepackage{pst-func}
+\usepackage{lmodern}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{algorithm, algorithmicx, algpseudocode}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{footnote}
+\usepackage[T1]{fontenc}
+\usepackage[croatian]{babel}
+
+\definecolor{darkmidnightblue}{rgb}{0.0, 0.2, 0.4}
+\usepackage[breaklinks=true,colorlinks,
+	citecolor=darkmidnightblue,
+	urlcolor=darkmidnightblue,
+	linktocpage=true,
+	linkcolor=darkmidnightblue,
+	pdftitle={Generiranje trodimenzionalnih termalnih modela unutarnjih prostora
+		zasnovano na fuziji laserskih i termovizijskih podataka},
+	pdfauthor={Dinko Osmankovic},
+	pdfsubject={Doktorska disertacija}]{hyperref}
+\usepackage[hyphenbreaks]{breakurl}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%                 Set line spacing = 1.5 here                   %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\baselinestretch}{1.5}
+\captionsetup[table]{name=Tabela}
+\captionsetup[table]{labelsep=space}
+\captionsetup[figure]{labelsep=space}
+\makeindex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%                      Your fancy heading                       %%%%%%
+%%%%% For the final copy you need to remove '\bfseries\today' below %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markright{\chaptername\ \thechapter.\ #1}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}{}}
+
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
+\renewcommand{\sectionmark}[1]{ \markright{#1}{} }
+
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE]{\textbf{ \nouppercase{\rightmark}} }
+\fancyhead[LO]{\textbf{ \nouppercase{\rightmark}} }
+
+\fancypagestyle{plain}{ %
+	\fancyhf{} % remove everything
+	\renewcommand{\headrulewidth}{0pt} % remove lines as well
+	\renewcommand{\footrulewidth}{0pt}
+}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % 
+
+
+%\lhead[\fancyplain{}{}]%
+%      {\fancyplain{}{\bfseries\rightmark}}
+%\chead[\fancyplain{}{}]%
+%      {\fancyplain{}{}}
+%\rhead[\fancyplain{}{}]%
+%      {\fancyplain{}{\bfseries\thepage}}
+%\lfoot[\fancyplain{}{}]%
+%      {\fancyplain{}{}}
+%\cfoot[\fancyplain{}{}]%
+%      {\fancyplain{}{}}
+%\rfoot[\fancyplain{}{}]%
+%      {\fancyplain{}{\bfseries
+%      %\today
+%      }}
+\floatname{algorithm}{Algoritam}
+\renewcommand{\thechapter}{\arabic{chapter}.}
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}.}
+\renewcommand{\thesubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}.}
+\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}.}
+\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}.}
+\renewcommand{\thealgorithm}{\arabic{chapter}.\arabic{algorithm}.}
+\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%Here you set the space between the main text%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%and the start of the footnote%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addtolength{\skip\footins}{5mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%      Define new counter so you can have the equation           %%%%%
+%%%%%    number 4.2.1a for example, this a gift from J.F.Blowey      %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newcounter{ind}
+%\def\eqlabon{
+%\setcounter{ind}{\value{equation}}\addtocounter{ind}{1}
+%\setcounter{equation}{0}
+%\renewcommand{\theequation}{\arabic{chapter}%
+%         .\arabic{section}.\arabic{ind}\alph{equation}}}
+%\def\eqlaboff{
+%\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}.}
+%\setcounter{equation}{\value{ind}}} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%           New theorem you want to use              %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\theorembodyfont{\rmfamily}\newtheorem{Pro}{{\textbf Propozicija}}[chapter]}
+{\theorembodyfont{\rmfamily}\newtheorem{The}{{\textbf Teorem}}[chapter]}
+{\theorembodyfont{\rmfamily}\newtheorem{Def}[The]{{\textbf Definicija}}}
+{\theorembodyfont{\rmfamily}\newtheorem{Cor}[The]{{\textbf Corollary}}}
+{\theorembodyfont{\rmfamily}\newtheorem{Lem}[The]{{\textbf Lema}}}
+{\theorembodyfont{\rmfamily}\newtheorem{Exp}{{\textbf Primjer}}[chapter]}
+\def\remark{\textbf{Remark}:}
+\def\remarks{\textbf{Remarks}:}
+\def\bproof{\textbf{Dokaz}: }
+\def\eproof{\hfill$\Box$}
+\newcounter{Lem}
+\newcounter{Def}
+\renewcommand\theLem{\thechapter\arabic{Lem}.}
+\renewcommand\theThe{\thechapter\arabic{The}.}
+\renewcommand\theDef{\thechapter\arabic{Def}.}
+\renewcommand\thePro{\thechapter\arabic{Pro}.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%    Bold font in math mode, a gift from J.F.Blowey       %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\bv#1{\mbox{\boldmath$#1$}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%        New symbol which is not defined in Latex         %%%%%%%%%%
+%%%%%%%                 a gift from J.F.Blowey                  %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The Mean INTegral
+% to be used in displaystyle
+\def\mint{\textstyle\mints\displaystyle}
+% to be used in textstyle
+\def\mints{\int\!\!\!\!\!\!{\rm-}\ }
+%
+% The Mean SUM
+% to be used in displaystyle
+\def\msum{\textstyle\msums\displaystyle}
+% to be used in textstyle
+\def\msums{\sum\!\!\!\!\!\!\!{\rm-}\ }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%            Define your short cut here              %%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\poincare{Poincar\'e }
+\def\holder{H\"older }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%            Algorithmicx   definitions              %%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\algorithmicif}{\textbf{ako}}
+\renewcommand{\algorithmicthen}{\textbf{onda}}
+\renewcommand{\algorithmicelse}{\textbf{inače}}
+\renewcommand{\algorithmicfor}{\textbf{za}}
+\renewcommand{\algorithmicend}{\textbf{kraj}}
+\renewcommand{\algorithmicdo}{\textbf{radi}}
+\renewcommand{\algorithmicrepeat}{\textbf{ponavljaj}}
+\renewcommand{\algorithmicuntil}{\textbf{dok}}
+\renewcommand{\algorithmicrequire}{\textbf{Ulaz:}}
+\renewcommand{\algorithmicensure}{\textbf{Izlaz:}}
+\renewcommand{\algorithmicreturn}{\textbf{vrati}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

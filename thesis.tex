@@ -1,0 +1,50 @@
+\documentclass{dmathesis}
+\usepackage[utf8x]{inputenc}
+\usepackage{notoccite}
+
+
+\newcommand{\imePrezime}{Ime Prezime}
+\newcommand{\naslovTeze}{Naslov Teze}
+\newcommand{\naslovTezeENG}{Thesis Title}
+\newcommand{\ciklus}{I}
+\newcommand{\ciklusNaziv}{prvi}
+\newcommand{\odsjek}{Odsjek za automatiku i elektroniku}
+\newcommand{\predmet}{Dinamički sistemi}
+\newcommand{\godina}{2017/2018.}
+\newcommand{\brojStranica}{50}
+
+
+
+\input{format}
+\widowpenalty=10000
+%\clubpenalty=10000
+
+\includeonly{chapter1}
+
+\begin{document}
+
+%% Front page of thesis
+\input{frontpage}
+
+%% Main text
+% set page number starts from 1
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+%% To ensure the equation counter works correctly
+%\eqlabon
+%\eqlaboff
+
+\include{chapter1}
+
+\addcontentsline{toc}{chapter}{Bibliografija}
+\bibliographystyle{ieeetr}
+\bibliography{reference}
+\nocite{*}
+\addtocontents{toc}{\protect\newpage}
+\include{append}
+\renewcommand{\indexname}{Pojmovnik}
+\clearpage
+\addcontentsline{toc}{chapter}{\numberline{}Pojmovnik}
+\printindex
+\end{document}

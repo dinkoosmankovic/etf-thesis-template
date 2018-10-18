@@ -1,0 +1,190 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   This is frontpage.tex file needed for the dmathesis.cls file.  You   %
+%  have to  put this file in the same directory with your thesis files.  %
+%                Written by M. Imran 2001/06/18                          % 
+%                 No Copyright for this file                             % 
+%                 Save your time and enjoy it                            % 
+%                                                                        % 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%           The title page           %%%%%%%%%%%%%%%%%%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagenumbering{roman}
+%\pagenumbering{arabic}
+
+\setcounter{page}{1}
+
+\newcommand{\sign}[1]{%      
+	\begin{tabular}[t]{@{}c@{}}
+		\makebox[3in]{\hrulefill}\\
+		\strut#1\strut
+	\end{tabular}%
+	\vspace{1cm}
+}
+
+\newpage
+
+\thispagestyle{empty}
+\begin{center}
+  \vspace*{1cm}
+  {\Huge \bf \naslovTeze}
+
+  \vspace*{2cm}
+  {\large\bf Kandidat: \imePrezime}\\
+  \vspace*{1cm}
+  {\large\bf Mentor: doc.dr. Dinko Osmanković}
+
+  \vfill
+
+  {\Large Završni rad na\\
+         [1mm] \ciklus~ciklusu studija}
+  \vspace*{0.9cm}
+  
+  % Put your university logo here if you wish.
+   \begin{center}
+   \includegraphics[scale=0.2]{logoETF/logo.eps}
+   \end{center}
+
+  {\large Elektrotehnički fakultet Sarajevo\\
+          [-3mm] \odsjek \\
+          [-3mm] Univerzitet u Sarajevu\\
+          [-3mm] Bosna i Hercegovina\\
+          [1mm]  Ak. godina \godina}
+
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% The dedication page, of you have one  %%%%%%%%%%%%%%%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\thispagestyle{empty}
+\begin{center}
+ \vspace*{2cm}
+  
+  
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%           The abstract page         %%%%%%%%%%%%%%%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\thispagestyle{empty}
+\addcontentsline{toc}{chapter}{\numberline{}Sažetak}
+\begin{center}
+  %\textbf{\Large \naslovTeze}
+
+  %\vspace*{1cm}
+  %\textbf{\large \imePrezime}
+
+  \vspace*{1cm}
+  \textbf{\large Sažetak}
+\end{center}
+
+Tekst sažetka.
+
+\newpage
+\thispagestyle{empty}
+\addcontentsline{toc}{chapter}{\numberline{}Abstract}
+\begin{center}
+	%\textbf{\Large \naslovTezeENG}
+	
+	%\vspace*{1cm}
+	%\textbf{\large \imePrezime}
+	
+	\vspace*{1cm}
+	\textbf{\large Abstract}
+\end{center}
+
+Abstract text.
+
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%          The declaration page         %%%%%%%%%%%%%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\thispagestyle{empty}
+
+{\scriptsize 
+
+\noindent Univerzitet u Sarajevu \\
+Naziv fakulteta/akademije: Elektrotehnički fakultet \\
+Naziv odsjeka i/ili katedre: \odsjek \\
+Predmet: \predmet \\
+
+
+\begin{center}
+	\textbf{Izjava o autentičnosti radova} \\
+	\vskip 2mm 
+	Seminarski rad, završni (diplomski odnosno magistarski) rad za I i II ciklus studija i integrirani
+	studijski program I i II ciklusa studija, magistarski znanstveni rad i doktorska disertacija\footnote{\scriptsize U radu su korišteni slijedeći dokumenti: Izjava autora koju koristi Elektrotehnički fakultet u Sarajevu; Izjava o
+		autentičnosti završnog rada Centra za interdisciplinarne studije – master studij „Evropske studije”, Izjava o
+		plagijarizmu koju koristi Fakultet političkih nauka u Sarajevu.}.
+\end{center} 
+\noindent Ime i prezime: \imePrezime \\
+Naslov rada: \naslovTeze \\
+Vrsta rada: Završni rad za \ciklus (\ciklusNaziv) ciklus studija \\
+Broj stranica: \brojStranica \\ 
+\vskip 1mm
+Potvrđujem:
+\begin{itemize}
+	\itemsep 0mm
+	\item Da sam pročitao/la dokumente koji se odnose na plagijarizam, kako je to definirano
+	Statutom Univerziteta u Sarajevu, Etičkim kodeksom Univerziteta u Sarajevu i pravilima
+	studiranja koja se odnose na I i II ciklus studija, integrirani studijski program I i II ciklusa i
+	III ciklus studija na Univerzitetu u Sarajevu, kao i uputama o plagijarizmu navedenim na
+	web stranici Univerziteta u Sarajevu;
+	\item Da sam svjestan/na univerzitetskih disciplinskih pravila koja se tiču plagijarizma;
+	\item Da je rad koji predajem potpuno moj, samostalni rad, osim u dijelovima gdje je to
+	naznačeno;
+	\item Da rad nije predat, u cjelini ili djelimično, za stjecanje zvanja na Univerzitetu u Sarajevu
+	ili nekoj drugoj visokoškolskoj ustanovi;
+	\item Da sam jasno naznačio/la prisustvo citiranog ili parafraziranog materijala i da sam se
+	referirao/la na sve izvore;
+	\item Da sam dosljedno naveo/la korištene i citirane izvore ili bibliografiju po nekom od
+	preporučenih stilova citiranja, sa navođenjem potpune reference koja obuhvata potpuni
+	bibliografski opis korištenog i citiranog izvora;
+	\item Da sam odgovarajuće naznačio/la svaku pomoć koju sam dobio/la pored pomoći
+	mentora/ice i akademskih tutora/ica. 
+\end{itemize}
+
+\noindent Mjesto, datum: \noindent\rule{5cm}{0.4pt} \\
+Potpis kandidata: \noindent\rule{6.1cm}{0.4pt} \\
+Potpis mentora: \noindent\rule{6.1cm}{0.4pt} \\
+
+
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%     The acknowledgements page         %%%%%%%%%%%%%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{Zahvalnice}
+\addcontentsline{toc}{chapter}{\numberline{}Zahvalnice}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%    tableofcontents, listoffigures and listoftables       %%%%%%%%%
+%%%%%%%%        Command if you do not have  them                  %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+\listoffigures
+\addcontentsline{toc}{chapter}{\numberline{}\listfigurename}
+\renewcommand{\listtablename}{Popis tabela}
+\listoftables
+\addcontentsline{toc}{chapter}{\numberline{}\listtablename}
+
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%   END OF FRONT PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
